@@ -1,0 +1,14 @@
+# Web dependencies
+node_modules/
+frontend/node_modules/
+dist/
+build/
+
+# Python environment and cache
+myenv/
+__pycache__/
+*.pyc
+.env
+
+# Misc
+.DS_Store
