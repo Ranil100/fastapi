@@ -8,6 +8,14 @@ import database_models
 from sqlalchemy.orm import Session
 
 
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins =["http://localhost:3000"]
+)
+
+
 database_models.base.metadata.create_all(bind=engine)
 
 @app.get("/")
